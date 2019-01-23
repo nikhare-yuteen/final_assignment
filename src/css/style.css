@@ -1,0 +1,97 @@
+.content .table .row .event-data div {
+    display: inline-flex;
+    border-bottom: solid 1px;
+    margin-left: 20px;
+    height: 50px;
+    width: 400px;
+}
+/* .rows {
+    position: relative;
+}
+.events {
+    position: absolute;
+    top: 0;
+    left: 78px;
+} */
+.main {
+    margin-top: 40px;
+    border: solid 1px;
+    width: 60%;
+    background: azure;
+    margin-left: 280px;
+}
+.header { 
+    padding-left: 200px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    background: coral;
+    border-bottom: solid 2px;
+}
+.frmEdit{
+   border : solid 1px;
+   width : 50%; 
+   margin-left: 300px;
+    margin-top: 50px;
+}
+.frmEdit .heading {
+    text-align: center;
+    background: coral;
+    padding: 1px;
+    margin: auto;
+}
+.frmEdit .button {
+    margin-bottom: 18px;
+    margin-left: 600px;
+    margin-top: 15px;
+}
+.frmEdit .row {
+    display: flex;
+    margin-left: 90px;
+    line-height: 1.5;
+    padding-top: 14px;
+}
+.frmEdit .row .label {
+    width: 30%;
+}
+
+.rowData .time {
+    display: inline-flex;
+    width: 100%;
+    background: aquamarine;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    line-height: 2;
+}
+.rowData .time .data-content{
+    width:70%;
+}
+.rowData .time .data{
+    display: inline-flex
+}
+.rowData .time .data-button{
+    display: inline-flex
+}
+.button{
+    border: solid 1px;
+    width: 90px;
+    height: 30px;
+    border-radius: 7px;
+}
+.button-sm{
+    border: solid 1px;
+    width: 50px;
+    height: 30px;
+    border-radius: 7px;
+}
+.button-content{
+    height: 42px;
+    border-radius: 5px;
+}
+.button-submit{
+    /* border: solid 1px; */
+    width: 90px;
+    height: 30px;
+    border-radius: 7px;
+    margin-left: 550px;
+}
