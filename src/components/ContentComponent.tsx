@@ -27,23 +27,25 @@ class ContentComponent extends React.Component<IProps,IState, {}> {
         }
     }
 
-    getRecordsWithinTimeRange = (records: any, time: any) => {
+    timeRange = (records: any, time: any) => {
         return records.filter((rec: any) => {
-            return (new Date(rec.startTime).getHours() == time.hour)
+            return (new Date(rec.startTime).getHours() == time.hour )
         })
     }
 
-    details_of_event = (events: any) => {
+    event_details = (events: any) => {
         return (
             events.map((event: any, index: any) => {
-                return <div>
+                return <div className="content">
                     <div className="data">
-                        {event.title || ""}
-                    </div>
+                        {event.title || ""}  {/*From {new Date(event.startTime).getHours()}:{new Date(event.startTime).getMinutes()}0 To {new Date(event.endTime).getHours()}:{new Date(event.endTime).getMinutes()}0 */}
+                    </div> 
+                    <div></div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <div className="data-button">
                         <Link to={`/editEvent/${event.id}`}><button className="button-content">Edit</button></Link>&nbsp;&nbsp;
-                        <button className="button-content" onClick={() => this.props.deleteEvent(event.id)}>Delete</button>
-                    </div>
+                        <button className="button-content" onClick={() => this.props.deleteEvent(event.id)}>Delete</button>&nbsp;&nbsp;
+                    </div><br/>
                 </div>
             })
         )
@@ -51,24 +53,29 @@ class ContentComponent extends React.Component<IProps,IState, {}> {
 
 
     timeLine = [
+        {hour : 1, type : "am"},{hour : 2, type : "am"},
+        {hour : 3, type : "am"},{hour : 4, type : "am"},
+        {hour : 5, type : "am"},{hour : 6, type : "am"},
+        {hour : 7, type : "am"},{hour : 8, type : "am"},
         {hour : 9, type : "am"},{hour : 10, type : "am"},
         {hour : 11, type : "am"},{hour : 12, type : "pm"},
-        {hour : 1, type : "pm"},{hour : 2, type : "pm"},
-        {hour : 3, type : "pm"},{hour : 4, type : "pm"},
-        {hour : 5, type : "pm"},{hour : 6, type : "pm"},
-        {hour : 7, type : "pm"},{hour : 8, type : "pm"}
+        {hour : 13, type : "pm"},{hour : 14, type : "pm"},
+        {hour : 15, type : "pm"},{hour : 16, type : "pm"},
+        {hour : 17, type : "pm"},{hour : 18, type : "pm"},
+        {hour : 19, type : "pm"},{hour : 20, type : "pm"},
+        {hour : 21, type : "pm"},{hour : 22, type : "pm"},
+        {hour : 23, type : "pm"},{hour : 24, type : "pm"},
         ]
-    createList = () =>{
-        let todaysRecords = this.dateWiseRecords(this.props.events,this.props.currentDate)
+    eventList = () =>{
+        let todaysEvent = this.dateWiseRecords(this.props.events,this.props.currentDate)
         return this.timeLine.map((time : any) => {
-            let dataWithRange = this.getRecordsWithinTimeRange(todaysRecords,time)
+            let dataRange = this.timeRange(todaysEvent,time)
             return <div className="rowData">
-                        <div className="time">{time.hour} {time.type}
+                        <div className="time">{time.hour} {time.type}</div>
                         <div className="data-content">
-                            {this.details_of_event(dataWithRange)}
+                            {this.event_details(dataRange)}
                         </div>
                     </div>
-            </div>
         })
         
     }
@@ -82,13 +89,12 @@ class ContentComponent extends React.Component<IProps,IState, {}> {
     render() {
     return (
         <div className="content">
-                <div>{this.createList()}</div>
+                <div>{this.eventList()}</div>
         </div>
     )
     }
     }
     let mapStateToProps = (state:any) =>{
-        console.log(state)
         return {events:state.events.event,currentDate:state.events.currentDate}
     
     }

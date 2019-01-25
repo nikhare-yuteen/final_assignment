@@ -16,9 +16,8 @@
 .main {
     margin-top: 40px;
     border: solid 1px;
-    width: 60%;
     background: azure;
-    margin-left: 280px;
+    width: 60%;
 }
 .header { 
     padding-left: 200px;
@@ -53,21 +52,35 @@
 .frmEdit .row .label {
     width: 30%;
 }
-
+.rowData {
+    height:36px;
+}
 .rowData .time {
     display: inline-flex;
-    width: 100%;
+    width: 59%;
     background: aquamarine;
     text-align: center;
     font-size: larger;
     font-weight: bold;
     line-height: 2;
+    position: absolute;
 }
-.rowData .time .data-content{
-    width:70%;
+.rowData .data-content{
+    width: 73%;
+    display: inline-flex;
+    margin-left: 150px;
+    padding-left: 50px;
+    position: relative;
+    background: bisque;
 }
 .rowData .time .data{
-    display: inline-flex
+    display: inline-flex;
+}
+.rowData .data-content .content{
+    display: inline-flex;
+}
+.rowData .data-content .content .data{
+    padding-top: 12px;
 }
 .rowData .time .data-button{
     display: inline-flex
@@ -85,8 +98,9 @@
     border-radius: 7px;
 }
 .button-content{
-    height: 42px;
+    height: 30px;
     border-radius: 5px;
+    margin-top: 4px;
 }
 .button-submit{
     /* border: solid 1px; */

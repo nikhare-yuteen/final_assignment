@@ -3,56 +3,56 @@ import { getTimezoneDifference } from "../actions/index"
 const initialState = {
     event : [
         {
-            "startTime": "Fri Jan 18 2019 01:00:00 GMT+0530 (IST)",
-            "endTime": "Fri Jan 18 2019 01:30:00 GMT+0530 (IST)",
+            "startTime": "Sat Jan 19 2019 13:00:00 GMT+0530 (IST)",
+            "endTime": "Sat Jan 19 2019 13:30:00 GMT+0530 (IST)",
             "title": "Event 1",
             "id": 1
         },
         {
-            "startTime": "Sat Jan 19 2019 04:00:00 GMT+0530 (IST)",
-            "endTime": "Sat Jan 19 2019 06:00:00 GMT+0530 (IST)",
+            "startTime": "Sun Jan 20 2019 16:00:00 GMT+0530 (IST)",
+            "endTime": "Sun Jan 20 2019 18:00:00 GMT+0530 (IST)",
             "title": "Event 2",
             "id": 2
         },
         {
-            "startTime": "Sun Jan 20 2019 20:00:00 GMT+0530 (IST)",
-            "endTime": "Sun Jan 20 2019 21:30:00 GMT+0530 (IST)",
+            "startTime": "Mon Jan 21 2019 20:00:00 GMT+0530 (IST)",
+            "endTime": "Mon Jan 21 2019 21:30:00 GMT+0530 (IST)",
             "title": "Event 3",
             "id": 3
         },
         {
-            "startTime": "Sun Jan 20 2019 21:30:00 GMT+0530 (IST)",
-            "endTime": "Sun Jan 20 2019 22:15:00 GMT+0530 (IST)",
+            "startTime": "Tue Jan 22 2019 21:30:00 GMT+0530 (IST)",
+            "endTime": "Tue Jan 22 2019 22:15:00 GMT+0530 (IST)",
             "title": "Event 4",
             "id": 4
         },
         {
-            "startTime": "Mon Jan 21 2019 01:00:00 GMT+0530 (IST)",
-            "endTime": "Mon Jan 21 2019 02:00:00 GMT+0530 (IST)",
+            "startTime": "Wed Jan 23 2019 01:00:00 GMT+0530 (IST)",
+            "endTime": "Wed Jan 23 2019 02:00:00 GMT+0530 (IST)",
             "title": "Event 5",
             "id": 5
         },
         {
-            "startTime": "Tue Jan 22 2019 03:00:00 GMT+0530 (IST)",
-            "endTime": "Tue Jan 22 2019 04:00:00 GMT+0530 (IST)",
+            "startTime": "Wed Jan 23 2019 03:00:00 GMT+0530 (IST)",
+            "endTime": "Wed Jan 23 2019 04:00:00 GMT+0530 (IST)",
             "title": "Event 6",
             "id": 6
         },
         {
-            "startTime": "Tue Jan 22 2019 04:00:00 GMT+0530 (IST)",
-            "endTime": "Tue Jan 22 2019 05:00:00 GMT+0530 (IST)",
+            "startTime": "Thu Jan 24 2019 14:00:00 GMT+0530 (IST)",
+            "endTime": "Thu Jan 24 2019 15:00:00 GMT+0530 (IST)",
             "title": "Event 7",
             "id": 7
         },
         {
-            "startTime": "Tue Jan 22 2019 01:00:00 GMT+0530 (IST)",
-            "endTime": "Tue Jan 22 2019 02:00:00 GMT+0530 (IST)",
+            "startTime": "Thu Jan 24 2019 01:00:00 GMT+0530 (IST)",
+            "endTime": "Thu Jan 24 2019 02:00:00 GMT+0530 (IST)",
             "title": "Event 8",
             "id": 8
         },
         {
-            "startTime": "Wed Jan 23 2019 02:00:00 GMT+0530 (IST)",
-            "endTime": "Wed Jan 23 2019 03:00:00 GMT+0530 (IST)",
+            "startTime": "Fri Jan 25 2019 02:00:00 GMT+0530 (IST)",
+            "endTime": "Fri Jan 25 2019 03:00:00 GMT+0530 (IST)",
             "title": "Event 9",
             "id": 9
         }

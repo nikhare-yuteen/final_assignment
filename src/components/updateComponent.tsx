@@ -70,7 +70,7 @@ class updateComponent extends React.Component<IProps,IState> {
                 </div>
                 <div className="row">
                     <div className="label">Event Id</div>
-                    <div className="input"><input type="number" min="0" defaultValue={this.props.match.params.id}></input></div>
+                    <div className="input"><input type="number" min="0" defaultValue={this.props.match.params.id} disabled></input></div>
                 </div>
                <div className="button-submit">
                   <button type="submit">Submit</button>
